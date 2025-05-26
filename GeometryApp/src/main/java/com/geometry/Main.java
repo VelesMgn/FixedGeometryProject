@@ -25,11 +25,9 @@ public class Main {
         double areaInCm = UnitConverter.metersToCentimeters(triangle.getArea());
         System.out.println("Triangle area in cm: " + areaInCm);
 
-        boolean areasEqual = ShapeComparator.compareAreas(circle, rectangle);
+        boolean areasEqual = ShapeComparator.compareAreas(circle.getArea(), rectangle.getArea());
         System.out.println("Are areas equal? " + areasEqual);
 
         System.out.println();
-
-
     }
 }
