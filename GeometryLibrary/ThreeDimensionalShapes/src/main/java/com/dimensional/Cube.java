@@ -1,3 +1,5 @@
+package com.dimensional;
+
 public class Cube {
     private final double side;
 

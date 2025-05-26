@@ -1,5 +1,7 @@
 package com.geometry;
 
+import com.dimensional.Cube;
+import com.dimensional.Sphere;
 import com.example.ShapeComparator;
 import com.example.UnitConverter;
 
@@ -29,5 +31,14 @@ public class Main {
         System.out.println("Are areas equal? " + areasEqual);
 
         System.out.println();
+
+        // 3D фигуры
+        Cube cube = new Cube(3);
+        Sphere sphere = new Sphere(4);
+
+        System.out.println("Cube volume: " + cube.getVolume());
+        System.out.println("Cube area: " + cube.getSurfaceArea());
+        System.out.println("Sphere surface area: " + sphere.getSurfaceArea());
+        System.out.println("Sphere volume: " + sphere.getVolume());
     }
 }
